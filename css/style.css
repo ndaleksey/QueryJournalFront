@@ -38,6 +38,10 @@ body {
     color: var(--light-color);
 }
 
+main {
+    margin: 5px 10px;
+}
+
 ul {
     list-style: none;
 }
@@ -56,6 +60,45 @@ a:visited {
     flex-direction: column;
 }
 
+table {
+    border-collapse: collapse;
+    position: relative;
+    border-bottom-style: solid;
+}
+
+section.upper-table {
+    height: 250px;
+    overflow-y: auto;
+    border: 2px solid var(--dark-color);
+    box-shadow: 3px 3px 7px var(--light-darker-color);
+}
+
+th, td {
+    text-align: left;
+    padding: 3px 5px 3px 10px;
+    color: var(--dark-lighter-color)
+}
+
+th {
+     font-size: 1rem;
+     color: var(--primary-color);
+     background-color: var(--dark-lighter-color);
+     position: sticky;
+     top: 0;
+ }
+
+ td {
+     font-size: 0.9rem;
+ }
+
+ tr {
+     background-color: var(--light-color);
+ }
+
+ tr:nth-child(even) {
+    background-color: var(--light-darker-color);
+ }
+
 nav {
     order: -1;
 }
@@ -66,12 +109,14 @@ nav {
     align-items: center;
     justify-content: space-between;
     background-color: var(--dark-color);
+    z-index: 10;
 }
 
 .navbar-menu {
     display: flex;
     height: 40px;
     justify-content: flex-start;
+    z-index: 10;
 }
 
 .navbar-menu-item {
