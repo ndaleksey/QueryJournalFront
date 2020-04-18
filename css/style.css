@@ -5,7 +5,22 @@
     --light-color: #eee;
     --light-darker-color: #aaa;
     --error-color: #f44;
+    --primary-color: #44f;
     --success-color: #4f4;
+    --gray-color: #555;
+}
+
+.disable-select {
+    user-select: none;
+    /* supported by Chrome and Opera */
+    -webkit-user-select: none;
+    /* Safari */
+    -khtml-user-select: none;
+    /* Konqueror HTML */
+    -moz-user-select: none;
+    /* Firefox */
+    -ms-user-select: none;
+    /* Internet Explorer/Edge */
 }
 
 * {
@@ -19,6 +34,8 @@ body {
     box-sizing: border-box;
     display: flex;
     flex-direction: column;
+    background-color: var(--gray-color);
+    color: var(--light-color);
 }
 
 ul {
@@ -27,4 +44,85 @@ ul {
 
 a {
     text-decoration: none;
+}
+
+a:visited {
+    color: inherit;
+    color: var(--light-color);
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+}
+
+nav {
+    order: -1;
+}
+
+.navbar {
+    flex-grow: 1;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: var(--dark-color);
+}
+
+.navbar-menu {
+    display: flex;
+    height: 40px;
+    justify-content: flex-start;
+}
+
+.navbar-menu-item {
+    display: flex;
+    flex-direction: column;
+    width: 100px;
+}
+
+.navbar-menu-item:nth-child(3) {
+    width: 130px
+}
+
+.navbar-menu-item:hover {
+    background-color: var(--dark-lighter-color);
+    color: var(--error-color);
+}
+
+.navbar-menu-item-title {
+    display: block;
+    padding: 10px 30px 10px 10px;
+    user-select: none;
+}
+
+.navbar-menu-item:hover .dropdown-menu {
+    display: flex;
+}
+
+.dropdown-menu {
+    display: none;
+    flex-direction: column;
+    width: 300px;
+}
+
+.dropdown-menu-item {
+    display: flex;
+    align-items: center;
+    background-color: var(--dark-color);
+    height: 50px;
+    align-items: center;
+}
+
+.dropdown-menu-item:hover {
+    background-color: var(--dark-lighter-color);
+}
+
+.dropdown-menu-item-title {
+    padding: 10px 5px;
+    user-select: none;
+}
+
+.navbar-search {
+    display: flex;
+    justify-content: flex-end;
 }
