@@ -60,6 +60,22 @@ a:visited {
     flex-direction: column;
 }
 
+.align-left {
+    justify-content: flex-start;
+}
+
+.align-right {
+    justify-content: flex-end;
+}
+
+.align-center {
+    justify-content: center;
+}
+
+.row {
+    display: flex;
+}
+
 table {
     border-collapse: collapse;
     position: relative;
@@ -80,24 +96,34 @@ th, td {
 }
 
 th {
-     font-size: 1rem;
-     color: var(--primary-color);
-     background-color: var(--dark-lighter-color);
-     position: sticky;
-     top: 0;
- }
+    font-size: 1rem;
+    color: var(--primary-color);
+    background-color: var(--dark-lighter-color);
+    position: sticky;
+    top: 0;
+}
 
- td {
-     font-size: 0.9rem;
- }
+td {
+    font-size: 0.9rem;
+}
 
- tr {
-     background-color: var(--light-color);
- }
+tr {
+    background-color: var(--light-color);
+}
 
- tr:nth-child(even) {
+tr:nth-child(even) {
     background-color: var(--light-darker-color);
- }
+}
+
+.dialog {
+    padding: 20px 30px;
+    width: 400px;
+    display: flex;
+    flex-direction: column;
+    border: 1px solid var(--light-darker-color);
+    border-radius: 5px;
+    box-shadow: 2px 2px 5px var(--dark-color);
+}
 
 nav {
     order: -1;
