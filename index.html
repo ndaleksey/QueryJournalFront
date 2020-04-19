@@ -4,41 +4,144 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link href='https://fonts.googleapis.com/css?family=Roboto:100,300,400,500,700,900|Material+Icons' rel="stylesheet">
+    <link href='https://fonts.googleapis.com/css?family=Roboto:100,300,400,500,700,900|Material+Icons'
+          rel="stylesheet">
+
+    <link rel="stylesheet" href="css/bootstrap/bootstrap.min.css">
     <link rel="stylesheet" href="css/style.css">
+
+    <script src="https://code.jquery.com/jquery-3.5.0.min.js"
+            integrity="sha256-xNzN2a4ltkB44Mc/Jz3pT4iU1cmeR0FkXs4pru/JxaQ="
+            crossorigin="anonymous"></script>
+    <script src="js/bootstrap/bootstrap.min.js"></script>
+
     <title>Query Journal</title>
 </head>
 
 <body>
-    <header>
-    </header>
+<nav class="navbar navbar-expand-lg bg-dark">
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="nav">
+            <li class="nav-item dropdown">
+                <span class="nav-link dropdown-toggle" role="button"
+                      data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Файл</span>
 
-    <div class="container">
-        <main></main>
-        <nav></nav>
-        <aside></aside>
+                <div class="dropdown-menu bg-dark" aria-labelledby="navbarDropdown">
+                    <span class="dropdown-item">Action</span>
+                    <span class="dropdown-item">Another action</span>
+                    <div class="dropdown-divider"></div>
+                    <span class="dropdown-item">Something else here</span>
+                </div>
+            </li>
+            <li class="nav-item">
+                <span class="nav-link">Правка</span>
+            </li>
+            <li class="nav-item">
+                <span class="nav-link">Справочники</span>
+            </li>
+            <li class="nav-item">
+                <span class="nav-link">Отчеты</span>
+            </li>
+        </ul>
     </div>
+</nav>
+<div class="container-fluid">
+    <main>
+        <div class="row row-cols-lg-1">
+            <table class="table table-striped">
+                <thead class="thead-dark">
+                <tr>
+                    <th scope="col">#</th>
+                    <th scope="col">First</th>
+                    <th scope="col">Last</th>
+                    <th scope="col">Handle</th>
+                </tr>
+                </thead>
+                <tbody>
+                <tr>
+                    <th scope="row">1</th>
+                    <td>Mark</td>
+                    <td>Otto</td>
+                    <td>@mdo</td>
+                </tr>
+                <tr>
+                    <th scope="row">2</th>
+                    <td>Jacob</td>
+                    <td>Thornton</td>
+                    <td>@fat</td>
+                </tr>
+                <tr>
+                    <th scope="row">3</th>
+                    <td>Larry</td>
+                    <td>the Bird</td>
+                    <td>@twitter</td>
+                </tr>
+                </tbody>
+            </table>
+        </div>
+        <div class="row">
+            <button class="btn btn-primary"
+                    data-toggle="modal"
+                    data-target="#exampleModalLong">Open Dialog
+            </button>
+            <!-- Modal -->
+            <div class="modal fade" id="exampleModalLong" tabindex="-1" role="dialog"
+                 aria-labelledby="exampleModalLongTitle" aria-hidden="true">
+                <div class="modal-dialog" role="document">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <h5 class="modal-title" id="exampleModalLongTitle">Modal title</h5>
+                            <button type="button" class="close" data-dismiss="modal"
+                                    aria-label="Close">
+                                <span aria-hidden="true">&times;</span>
+                            </button>
+                        </div>
+                        <div class="modal-body">
+                            <div class="container">
+                                <div class="row">Lorem ipsum dolor sit amet, consectetur adipisicing
+                                    elit. Alias blanditiis delectus et facere iusto laudantium
+                                    possimus repellendus sapiente voluptas. Adipisci, aliquam
+                                    debitis id omnis perferendis praesentium quasi quisquam
+                                    repellendus voluptatem.
+                                </div>
+                                <div class="row">Lorem ipsum dolor sit amet, consectetur adipisicing
+                                    elit. Alias blanditiis delectus et facere iusto laudantium
+                                    possimus repellendus sapiente voluptas. Adipisci, aliquam
+                                    debitis id omnis perferendis praesentium quasi quisquam
+                                    repellendus voluptatem.
+                                </div>
+                                <div class="row">Lorem ipsum dolor sit amet, consectetur adipisicing
+                                    elit. Alias blanditiis delectus et facere iusto laudantium
+                                    possimus repellendus sapiente voluptas. Adipisci, aliquam
+                                    debitis id omnis perferendis praesentium quasi quisquam
+                                    repellendus voluptatem.
+                                </div>
+                                <div class="row">Lorem ipsum dolor sit amet, consectetur adipisicing
+                                    elit. Alias blanditiis delectus et facere iusto laudantium
+                                    possimus repellendus sapiente voluptas. Adipisci, aliquam
+                                    debitis id omnis perferendis praesentium quasi quisquam
+                                    repellendus voluptatem.
+                                </div>
+                            </div>
+                        </div>
+                        <div class="modal-footer">
+                            <button type="button" class="btn btn-primary">Сохранить</button>
+                            <button type="button" class="btn btn-secondary" data-dismiss="modal">
+                                Закрыть
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+</div>
 
-    <footer>
-    </footer>
+<footer>
+</footer>
 </body>
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-<script src="https://code.jquery.com/jquery-3.5.0.min.js"
-    integrity="sha256-xNzN2a4ltkB44Mc/Jz3pT4iU1cmeR0FkXs4pru/JxaQ=" crossorigin="anonymous"></script>
-
-<script src="js/script.js"></script>
+<script src=" js/script.js"></script>
 
 </html>
